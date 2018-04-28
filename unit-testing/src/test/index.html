@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/5.1.1/mocha.js
+" />
+</head>
+
+<body>
+    <div id="mocha" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/5.1.1/mocha.js
+" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.1.2/chai.js" />
+
+    <!-- Files to test  -->
+    <script src="../NumberList.js"></script>
+    <!--  -->
+
+    <script> mocha.setup('bdd')</script>
+
+    <script> 
+        let expect = chai.expect;
+    </script>
+    <!-- test files  -->
+    <script src="NumberList.test.js" />
+    <!--  -->
+    <script> mocha.run(); </script>
+</body>
+
+</html>
