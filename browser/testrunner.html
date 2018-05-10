@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mocha Tests</title>
+    <!-- Gives results proper formatting -->
+    <link rel="stylesheet" href="node_modules/mocha/mocha.css">
+</head>
+
+<body>
+    <!-- Test result insertion div -->
+    <div id="mocha"></div>
+    <!-- Load mocha and chai -->
+    <script src="node_modules/mocha/mocha.js"></script>
+    <script src="node_modules/chai/chai.js"></script>
+    <!-- Makes testing helpers available -->
+    <script>mocha.setup('bdd')</script>
+
+    <!-- load code you want to test here -->
+
+    <!-- load your test files here -->
+    <script src="test/arrayTest.js"></script>
+
+    <!-- Runs tests AFTER source and tests are loaded as files -->
+    <script>
+        mocha.run();
+    </script>
+</body>
+
+</html>
